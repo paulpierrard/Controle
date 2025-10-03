@@ -75,7 +75,8 @@ body {
   padding: 3rem 0;
   text-align: center;
   color: white;
-  background-image: url('../img/hero.jpg');
+  background: linear-gradient(135deg, var(--ter1), var(--ter2));
+  border-radius: var(--radius);
 }
 
 .hero h1 {
@@ -272,9 +273,25 @@ body {
   background-color: var(--ter2);
   padding: 1.25rem 0;
   border-top: 1px solid rgba(0, 0, 0, .04);
-  margin-top: 2rem
-}
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+}
+.site-footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500
+}
+.site-footer a:hover {
+  color: var(--ter1);
+}
+.site-footer div {
+  text-align: center;
+  font-size: .9rem;
+
+}
 /* small screens */
 @media(min-width:768px) {
   .header-inner {
