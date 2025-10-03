@@ -12,7 +12,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <div class="logo">WebCraft <span>Solutions</span></div>
-      <nav role="navigation" aria-label="Menu principal">
+      <nav aria-label="Menu principal">
         <a href="index.html" class="nav-link">Accueil</a>
         <a href="contact.html" class="nav-link">Contact</a>
       </nav>
@@ -34,7 +34,7 @@
       <div id="loader" class="loader" role="status" aria-live="polite" aria-hidden="true">Chargement...</div>
       <div id="error-message" class="error" role="alert" aria-live="assertive"></div>
 
-      <div id="tech-filters" class="filters" aria-label="Filtres technologies"></div>
+      <div id="tech-filters" class="filters" role="group" aria-label="Filtres de technologies"></div>
 
       <div id="projects-grid" class="grid" role="list" aria-live="polite"></div>
     </section>
@@ -57,6 +57,7 @@
   <!-- Modal -->
   <div id="project-modal" class="modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
     <div class="modal-panel" role="document">
+      <h2 id="modal-title" class="visually-hidden">Détails du projet</h2>
       <button class="modal-close" aria-label="Fermer la fenêtre">✕</button>
       <div class="modal-content" tabindex="0"></div>
     </div>
